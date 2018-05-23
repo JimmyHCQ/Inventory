@@ -1,0 +1,71 @@
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.bag{
+  background-color: lightgrey;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+#openedBag{
+  display: none;
+}
+
+#containerInventory{
+  margin-top: 5px;
+  height: auto;
+  width: 400px;
+  background: grey;
+  display: none;
+  /*justify-content: space-around;*/
+  /*align-items: flex-start;*/
+  border: 2px solid lightgrey;
+  border-radius: 10px;
+  flex-direction: column;
+}
+
+#Inventory{
+  margin: 5px auto;
+  background: white;
+  height: 200px;
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.boxItem{
+  background-color: black;
+  margin: 5px auto;
+  height: 60px;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+#containerButton{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  height: 20%;
+  width: 50%;
+}
+
+#containerDescription{
+  margin: 5px auto;
+  background-color: lightgrey;
+  height: 100px;
+  width: 90%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
