@@ -4,24 +4,28 @@ var inventoryJSON = {
       {
         "id":1,
         "name":"sword",
+        "icon":"<img src='/img/sword.png' alt='...'>",
         "description":"This is a sword made of steel.",
         "price":200,
         "weight":45,},
       {
         "id":2,
         "name":"armor",
+        "icon":"<img src='/img/armor.gif' alt='...'>",
         "description":"This is an armor made of leather.",
         "price":300,
         "weight":50},
       {
         "id":3,
         "name":"shield",
+        "icon":"<img src='/img/shield.png' alt='...'>",
         "description":"This is a shield made of iron.",
         "price":500,
         "weight":50},
       {
         "id":4,
         "name":"potion",
+        "icon":"<img src='/img/potion.png' alt='...'>",
         "description":"Hell yeah ! This is a fucking potion fucking usefull ! Fuck !",
         "price":1000,
         "weight": 2}
@@ -38,15 +42,15 @@ function start(){
   bag=inventoryJSON.bag;
   for (i=0;i < bag.item.length;i++) {
     item=bag.item[currentItem].name;
-    document.getElementById("containerButton").innerHTML += "<button onclick=\"selectedItem='" + i + "', currentBox='boxItem" + i + "', addItem()\">Buy " + item + "</button>";
-    document.getElementById("containerButton").innerHTML += "<button onclick=\"selectedItem='" + i + "', currentBox='boxItem" + i + "', removeItem()\">Sell " + item + "</button>";
+    document.getElementById("containerButton").innerHTML +="<button onclick=\"selectedItem='" + i + "', currentBox='boxItem" + i + "', addItem()\">Buy " + item + "</button>";
+    document.getElementById("containerButton").innerHTML +="<button onclick=\"selectedItem='" + i + "', currentBox='boxItem" + i + "', removeItem()\">Sell " + item + "</button>";
     currentItem++;
   }
 }
 
 function addItem() {
   currentItem = selectedItem;
-  item=bag.item[currentItem].name;
+  item=bag.item[currentItem].icon;
     inventory.innerHTML += "<div id='item" + currentItem + "' class='boxItem' onclick=\"selectedItem='" + currentItem + "', addDescription()\">"+ item + "</div>";
 }
 

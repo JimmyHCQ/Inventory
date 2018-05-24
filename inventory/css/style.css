@@ -6,7 +6,6 @@ body{
 }
 
 .bag{
-  background-color: lightgrey;
   height: 100px;
   width: 100px;
   display: flex;
@@ -23,18 +22,16 @@ body{
   margin-top: 5px;
   height: auto;
   width: 400px;
-  background: grey;
+  background: #464904;
   display: none;
-  /*justify-content: space-around;*/
-  /*align-items: flex-start;*/
-  border: 2px solid lightgrey;
+  border: 2px solid #C7804C;
   border-radius: 10px;
   flex-direction: column;
 }
 
 #Inventory{
   margin: 5px auto;
-  background: white;
+  background: #959825;
   height: 200px;
   width: 90%;
   display: grid;
@@ -42,21 +39,19 @@ body{
 }
 
 .boxItem{
-  background-color: black;
   margin: 5px auto;
   height: 60px;
   width: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
 }
 
 #containerButton{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  height: 20%;
+  height: 100px;
   width: 50%;
 }
 
